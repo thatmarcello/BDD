@@ -32,8 +32,7 @@ public class ReplenishmentPage {
     }
 
     public void waitingError() {
-        errorNotification.shouldBe(Condition.visible, Duration.ofSeconds(15));
-        errorNotification.shouldHave(Condition.exactText("Ошибка"));
+        errorNotification.shouldBe(Condition.visible, Duration.ofSeconds(15)).shouldHave(Condition.exactText("Ошибка"));
     }
 
 }
